@@ -28,7 +28,7 @@ p {
 
 .container { 
     text-align: center;
-    border-radius:400px;
+    border-radius:40px;
     border: cornsilk;
     border-style: solid;
     border-width: 5px;
@@ -85,9 +85,35 @@ button {
     text-align: center;
 }
 
+
 .verde { background-color: #4CAF50; }
 .amarelo { background-color: #FFEB3B; color: black; }
 .vermelho { background-color: #F44336; }
+
+.evolution-chain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 120px auto;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: rgba(143, 216, 255, 0.681);
+    margin-left: 10px;
+}
+
+.evolution-chain img {
+    width: 230px;
+    height: 230px;
+    
+}
+
+.evolution-chain .silhouette {
+    filter: brightness(0) invert(0);
+    opacity: 0.7;
+}
 
 </style>
 </head>
@@ -105,6 +131,7 @@ button {
                                 <div class="verde"></div>
                                 <div class="amarelo"></div>
                                 <div class="vermelho"></div>
+                                <div class="interface"></div>
                                 </div>
                             </td>
                                
@@ -114,9 +141,10 @@ button {
 
 <h1>CHARMANDER                  .                         n° 004 </h1>
 <p></p>
-<h6>
+<h4>
 Charmander é o Pokémon número 004 da Pokédex Nacional, do tipo Fogo, introduzido na Geração I, na região de Kanto, em 1996 nos jogos originais Pokémon Red e Green. Mede cerca de 0,6 metro e pesa aproximadamente 8,5 kg. Fisicamente, é um pequeno lagarto com pele laranja e uma cauda que termina em uma chama, a qual indica sua saúde e vigor. Psicologicamente, Charmander é curioso, leal e brincalhão, mas pode se assustar facilmente em situações perigosas. Sua inspiração vem de lagartos e dragões, e a chama da cauda simboliza sua vida: se apagar, sua vida está em risco. Curiosidades incluem que ele gosta de calor e sol, e que aprende a controlar suas pequenas chamas à medida que cresce. Charmander evolui para Charmeleon no nível 16.
-</h6>
+</h4>
+
     <div
 
 class = button>
@@ -124,7 +152,13 @@ class = button>
 <a href="charmeleon.html">
 <button style="float: right;">CHARMELEON</button></a>
 </div>
-
+<div class="evolution-chain">
+    <img src="charmander.png" alt="Charmander">
+    <img src="charmeleon.png" alt="Charmeleon" class="silhouette">
+    <img src="charizard.png" alt="Charizard" class="silhouette">
+</div>
+<style>
+</style>
 
 
 </body>
